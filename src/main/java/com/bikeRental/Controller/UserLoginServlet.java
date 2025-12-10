@@ -32,7 +32,7 @@ public class UserLoginServlet extends HttpServlet {
 			session.setAttribute("user", user);
 			res.sendRedirect("UserHome.jsp");
 		} else {
-			req.setAttribute("msg", "Account not found");
+			req.setAttribute("msg", "Account not found or Invalid Credentials");
 			RequestDispatcher rd = req.getRequestDispatcher("UserLogin.jsp");
 			rd.forward(req, res);
 		}
