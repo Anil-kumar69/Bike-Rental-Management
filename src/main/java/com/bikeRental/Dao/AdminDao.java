@@ -37,7 +37,7 @@ public class AdminDao {
 
 	public List<Bike> getAllBikes() {
 		Session session = factory.openSession();
-		Query<Bike> q = session.createQuery("from Bike", Bike.class);
+		Query<Bike> q = session.createQuery("from Bike where available='yes'", Bike.class);
 		List<Bike> bike = q.list();
 		session.close();
 		return bike;

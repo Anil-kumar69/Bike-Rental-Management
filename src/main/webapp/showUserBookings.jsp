@@ -16,7 +16,7 @@
         min-height: 100vh;
         box-sizing: border-box;
         position: relative;
-        overflow: hidden;
+        overflow: auto;
     }
 
     body::before {

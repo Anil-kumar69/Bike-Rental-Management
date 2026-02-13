@@ -18,7 +18,7 @@
         flex-direction: column;
         color: white;
         position: relative;
-        overflow: hidden;
+        overflow: auto;
     }
 
     body::before {

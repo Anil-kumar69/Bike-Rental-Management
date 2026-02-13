@@ -14,11 +14,10 @@ import com.bikeRental.Service.AdminService;
 
 @WebServlet("/adminAddBike")
 public class AdminAddBikeServlet extends HttpServlet {
-
+	
 	private AdminService service = new AdminService();
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
 		String model = req.getParameter("model");
 		String brand = req.getParameter("brand");
 		String engineCc = req.getParameter("engineCc");

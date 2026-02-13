@@ -19,7 +19,7 @@
         align-items: center;
         flex-direction: column;
         position: relative;
-        overflow: hidden;
+        overflow: auto;
     }
 
     body::before {
